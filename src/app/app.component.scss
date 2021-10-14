@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+#tenfold-maps-test{
+  @import "~bootstrap/scss/grid";
+  .focused-map{
+    height: 100%;
+  }
+  .grid-map {
+    height: 300px;
+  }
+}

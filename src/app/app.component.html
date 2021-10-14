@@ -1,0 +1,23 @@
+<div id="tenfold-maps-test">
+  <div class="row">
+    <div class="col-4">
+      <ul>
+        <li *ngFor="let map of numberOfMaps">
+          <p>Mapa: {{map}}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-4">
+      <agm-map class="focused-map" [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </div>
+    <div class="col-4">
+      <div *ngFor="let map of numberOfMaps">
+        <agm-map class="grid-map" [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
+    </div>
+  </div>
+</div>
