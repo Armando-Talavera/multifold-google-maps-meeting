@@ -6,6 +6,11 @@
           <p>Mapa: {{map}}</p>
         </li>
       </ul>
+      <div class="btn-container">
+        <button (click)="addMap()">
+          Agregar Mapa
+        </button>
+      </div>
     </div>
     <div class="col-4">
       <agm-map class="focused-map" [latitude]="lat" [longitude]="lng">

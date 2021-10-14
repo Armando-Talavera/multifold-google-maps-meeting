@@ -9,5 +9,9 @@ export class AppComponent {
   title = 'Tenfold AGM';
   lat = 51.678418;
   lng = 7.809007;
-  numberOfMaps = [1,2,3,4,5,6,7,8,9,10];
+  numberOfMaps: string[] = [];
+
+  addMap() {
+    this.numberOfMaps.push('New Map')
+  }
 }
